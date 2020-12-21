@@ -1,0 +1,15 @@
+Feature: user login into OrangeHRM application
+
+  Scenario Outline: Registered user try to login into the application successfully [90m# src/main/resources/Featurefile/OrangeHRM.feature:3[0m
+    [36mGiven [0m[36muser hits the application URL[0m
+    [36mWhen [0m[36muser enters the username "<username>" and password "<password>"[0m
+    [36mAnd [0m[36muser hits the login button[0m
+    [36mThen [0m[36muser should see the login name as expected[0m
+
+    Examples: 
+
+  Scenario Outline: Registered user try to login into the application successfully [90m# src/main/resources/Featurefile/OrangeHRM.feature:11[0m
+    [32mGiven [0m[32muser hits the application URL[0m                                            [90m# Stepdefination.openbrowser()[0m
+    [32mWhen [0m[32muser enters the username "[0m[32m[1mAdmin[0m[32m" and password "[0m[32m[1madmin123[0m[32m"[0m                  [90m# Stepdefination.user_enters_the_username_and_password(String,String)[0m
+    [32mAnd [0m[32muser hits the login button[0m                                                 [90m# Stepdefination.user_hits_the_login_button()[0m
+    [32mThen [0m[32muser should see the login name as expected[0m                                [90m# Stepdefination.loginusername()[0m

@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Registered user try to login into the application successfully",
+        "description": "",
+        "id": "user-login-into-orangehrm-application;registered-user-try-to-login-into-the-application-successfully;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8680328400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user hits the application URL",
+            "match": {
+              "location": "Stepdefination.openbrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 512386200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters the username \"Admin\" and password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Admin",
+                  "offset": 26
+                },
+                {
+                  "val": "admin123",
+                  "offset": 47
+                }
+              ],
+              "location": "Stepdefination.user_enters_the_username_and_password(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1869803800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user hits the login button",
+            "match": {
+              "location": "Stepdefination.user_hits_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 504335700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see the login name as expected",
+            "match": {
+              "location": "Stepdefination.loginusername()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "user login into OrangeHRM application",
+    "description": "",
+    "id": "user-login-into-orangehrm-application",
+    "keyword": "Feature",
+    "uri": "src/main/resources/Featurefile/OrangeHRM.feature"
+  }
+]
